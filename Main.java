@@ -7,6 +7,10 @@ public class Main {
         return num2;
     }
 
+    public static <T extends Number> double add(T num1, T num2){
+        double result = num1.doubleValue() + num1.doubleValue();
+        return result;
+    }
    
     public static void main(String[] args){
 
@@ -18,5 +22,6 @@ public class Main {
         // method.showItems(nums);
 
         System.out.println(calculateMin(23, 54));
+        System.out.println(add(10, 20));
     }
 }
